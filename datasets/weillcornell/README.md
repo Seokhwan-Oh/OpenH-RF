@@ -22,9 +22,7 @@ size_categories:
 
 ![Weill Cornell QUS phantom dataset: B-mode, pooled Nakagami maps, and theoretical BSC curves](assets/hero.png)
 
-*B-mode (frame 0) and 20-frame pooled Nakagami maps from [`data/ac10_15m_SK.hdf5`](https://huggingface.co/datasets/nvidia/OpenH-RF/blob/main/weillcornell/data/ac10_15m_SK.hdf5). The BSC curves are material-model references for the three phantoms; pooled Nakagami maps are statistical references. All images share the same physical field of view, and parameter maps retain their native grid. Display limits: B-mode, −60 to 0 dB; m, 0.5–1.5; ω, 2nd–98th percentiles.*
-
-A standalone B-mode reconstruction is available as [main.png](assets/main.png).
+*B-mode (frame 0) and 20-frame pooled Nakagami maps from [`data/ac10_15m_SK.hdf5`](https://huggingface.co/datasets/nvidia/OpenH-RF/blob/main/weillcornell/data/ac10_15m_SK.hdf5). The BSC curves are material-model references for the three phantoms; pooled Nakagami maps are statistical references.*
 
 ## Dataset Description
 

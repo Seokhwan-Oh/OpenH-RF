@@ -106,7 +106,7 @@ No human or animal subjects. `metadata/subject/type` is `phantom` and `metadata/
 
 ## Data Validation
 
-A `zea.Pipeline` (cast → demodulate → DAS beamforming → envelope detection → normalization → log compression) is defined in `pipeline.yaml`, on a common 597 x 300 grid for every acquisition. Its output for frame 0 of `ac10_15m_SK` is shown at the top of this card. Raw RF and the embedded maps were checked for shape, dtype, finite values, coordinates, labels, min/max, and the frame-broadcast behavior described above.
+A `zea.Pipeline` (cast → demodulate → DAS beamforming → envelope detection → normalization → log compression) is defined in `pipeline.yaml`, on a common 301 x 600 grid (isotropic ~0.073 mm pixels) for every acquisition. Its output for frame 0 of `ac10_15m_SK` is shown at the top of this card. Raw RF and the embedded maps were checked for shape, dtype, finite values, coordinates, labels, min/max, and the frame-broadcast behavior described above.
 
 ## Known Issues
 

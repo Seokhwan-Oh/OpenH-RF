@@ -20,9 +20,9 @@ size_categories:
 
 # Weill Cornell QUS Phantom Dataset
 
-![Reference zea reconstruction of ac10_15m_SK frame 0](assets/ac10_15m_SK_pipeline.png)
+![Weill Cornell QUS phantom dataset: B-mode, pooled Nakagami maps, and theoretical BSC curves](assets/hero.png)
 
-*B-mode of frame 0 of [`data/ac10_15m_SK.hdf5`](https://huggingface.co/datasets/nvidia/OpenH-RF/blob/main/weillcornell/data/ac10_15m_SK.hdf5), reconstructed from the raw RF on the common 597 x 300 grid (approximately 3-25 mm depth).*
+*B-mode (frame 0) and 20-frame pooled Nakagami maps from [`data/ac10_15m_SK.hdf5`](https://huggingface.co/datasets/nvidia/OpenH-RF/blob/main/weillcornell/data/ac10_15m_SK.hdf5). The BSC curves are material-model references for the three phantoms; pooled Nakagami maps are statistical references.*
 
 ## Dataset Description
 
@@ -106,7 +106,7 @@ No human or animal subjects. `metadata/subject/type` is `phantom` and `metadata/
 
 ## Data Validation
 
-A `zea.Pipeline` (cast → demodulate → DAS beamforming → envelope detection → normalization → log compression) is defined in `pipeline.yaml`, on a common 597 x 300 grid for every acquisition. Its output for frame 0 of `ac10_15m_SK` is shown at the top of this card. Raw RF and the embedded maps were checked for shape, dtype, finite values, coordinates, labels, min/max, and the frame-broadcast behavior described above.
+A `zea.Pipeline` (cast → demodulate → DAS beamforming → envelope detection → normalization → log compression) is defined in `pipeline.yaml`, on a common 301 x 600 grid (isotropic ~0.073 mm pixels) for every acquisition. Its output for frame 0 of `ac10_15m_SK` is shown at the top of this card. Raw RF and the embedded maps were checked for shape, dtype, finite values, coordinates, labels, min/max, and the frame-broadcast behavior described above.
 
 ## Known Issues
 
@@ -119,3 +119,4 @@ A `zea.Pipeline` (cast → demodulate → DAS beamforming → envelope detection
 ## Ethical Considerations
 
 Phantom-only data; no human or animal subjects, clinical metadata, or PHI. The contributors confirm that these phantom data are cleared for release under CC BY 4.0.
+
